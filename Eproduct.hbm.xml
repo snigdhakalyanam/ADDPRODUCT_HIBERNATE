@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "EProduct" table = "eproduct">
+      
+      
+      <id name = "ID" type = "long" column = "ID">
+         <generator class="increment"/>
+      </id>
+      
+      <property name = "name" column = "name" type = "string"/>
+      <property name = "price" column = "price" type = "big_decimal"/>
+      <property name = "dateAdded" column = "date_added" type = "date"/>
+      
+   </class>
+</hibernate-mapping>
